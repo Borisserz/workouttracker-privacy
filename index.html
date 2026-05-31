@@ -71,15 +71,25 @@ do not share it with third parties. HealthKit data is processed on your device.
 
 <h2>3. How Your Data Is Stored</h2>
 <p>
-Most of your data — workouts, measurements, photos, and settings — is stored
-<strong>locally on your device</strong>. Some features require server storage:
+  Most of your data — workouts, measurements, photos, and settings — is created and used
+  <strong>on your device</strong>. Depending on the feature, data is stored as follows:
 </p>
 <ul>
-<li><strong>Shared workouts</strong> you publish are stored in our cloud database (Google Firebase Firestore).</li>
-<li><strong>Safety features</strong> (blocked-user lists and content reports) are stored in Firestore to keep the shared community safe.</li>
-<li>To enable these features, the App creates an <strong>anonymous account</strong> (Firebase Anonymous Authentication). No email or password is required.</li>
+  <li>
+    <strong>iCloud sync (Apple CloudKit)</strong> — If you are signed in to iCloud, your
+    fitness data (workouts, sets, reps, weights, <strong>body measurements</strong>, and
+    <strong>weight history</strong>) is synced across your devices using your
+    <strong>private iCloud account</strong> (CloudKit private database, container
+    <code>iCloud.com.borisdev.WorkoutTracker</code>). This data is stored in your personal
+    iCloud space, is governed by
+    <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>, and is
+    <strong>not accessible to us</strong>. Health-derived metrics read from HealthKit are not
+    written to CloudKit beyond the workout/measurement values described above.
+  </li>
+  <li><strong>Shared workouts</strong> you publish are stored in our cloud database (Google Firebase Firestore).</li>
+  <li><strong>Safety features</strong> (blocked-user lists and content reports) are stored in Firestore to keep the shared community safe.</li>
+  <li>To enable the community features above, the App creates an <strong>anonymous account</strong> (Firebase Anonymous Authentication). No email or password is required.</li>
 </ul>
-
 <h2>4. AI Features</h2>
 <p>
 When you use AI Coach or AI generation features, the text you submit is sent
