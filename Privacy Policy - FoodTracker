@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodTracker — Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px;
+color: #1c1c1e; background: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+body { color: #e5e5e7; background: #1c1c1e; }
+a { color: #0a84ff; }
+}
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.25rem; margin-top: 2rem; }
+code { background: rgba(127,127,127,0.15); padding: 2px 5px; border-radius: 4px; }
+.muted { color: #8e8e93; font-size: 0.9rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+th, td { border: 1px solid rgba(127,127,127,0.3); padding: 8px 10px; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — FoodTracker</h1>
+<p class="muted">Last updated: 9 June 2026</p>
+
+<p>
+This Privacy Policy explains how FoodTracker (“the App”, “we”, “us”),
+developed by Boris Serzhanovich, handles your information. The App is a
+nutrition, diet, and calorie tracking application for iOS. By using the
+App you agree to the practices described below.
+</p>
+
+<h2>1. Information We Collect</h2>
+<table>
+<tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+<tr>
+<td>Health & Nutrition</td>
+<td>Active energy burned, dietary energy consumed, weight, water logs (via HealthKit); meals, custom recipes, and goals you enter</td>
+<td>To provide core app functionality: nutrition tracking, daily calorie insights, and goal progression</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>The display name you provide during onboarding</td>
+<td>To personalize the app experience</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td>Live camera feed for scanning food barcodes</td>
+<td>To quickly find food items. The camera feed is processed locally on your device and images are never saved or uploaded to our servers</td>
+</tr>
+<tr>
+<td>User Content</td>
+<td>Messages and prompts you send to the AI Coach or AI Chef; custom meal recipes you create</td>
+<td>To generate AI responses and personalize your diet plan</td>
+</tr>
+</table>
+
+<h2>2. HealthKit Data</h2>
+<p>
+When you grant permission, the App reads health metrics from Apple HealthKit
+solely to display them inside the App and compute nutrition insights. We also write data 
+(like water intake or logged activities) to HealthKit if you explicitly allow it. We do
+<strong>not</strong> use HealthKit data for advertising or marketing, and we
+do not share it with third parties. HealthKit data is processed on your device.
+</p>
+
+<h2>3. How Your Data Is Stored</h2>
+<p>
+  Most of your data — meals, custom recipes, logs, and settings — is created and used
+  <strong>on your device</strong>. Depending on the feature, data is stored as follows:
+</p>
+<ul>
+  <li>
+    <strong>iCloud sync (Apple CloudKit)</strong> — If you are signed in to iCloud, your
+    nutrition data (meals, custom recipes, daily summaries, and weight history) is synced across your devices using your
+    <strong>private iCloud account</strong> (CloudKit private database, container
+    <code>iCloud.com.borisdev.FoodTracker</code>). This data is stored in your personal
+    iCloud space, is governed by
+    <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>, and is
+    <strong>not accessible to us</strong>.
+  </li>
+  <li><strong>Cloud Content</strong> — The App fetches curated Academy articles and Chef Recipes from our cloud database (Google Firebase Firestore). This data is read-only.</li>
+  <li>To securely fetch remote configurations and curated content, the App creates an <strong>anonymous account</strong> (Firebase Anonymous Authentication). No email or password is required.</li>
+</ul>
+
+<h2>4. AI Features</h2>
+<p>
+When you use the AI Coach or AI Chef features, the text and nutritional context you submit is sent
+to our secure backend (Google Cloud Functions) and processed by Google’s
+Vertex AI (Gemini) models to generate a response. Requests are protected by
+Firebase App Check. Please avoid submitting sensitive personal information in
+AI prompts.
+</p>
+
+<h2>5. Third-Party Services</h2>
+<ul>
+<li>Google Firebase (Authentication, Firestore, Analytics, App Check) — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+<li>Google Cloud / Vertex AI (Gemini) — <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy</a></li>
+<li>Apple HealthKit — data governed by Apple’s on-device frameworks</li>
+</ul>
+
+<h2>6. Data Sharing</h2>
+<p>
+We do not sell your personal data. We do not use your data for tracking across
+apps or websites owned by other companies. Your personal diet and health data remains strictly private.
+</p>
+
+<h2>7. Account & Data Deletion</h2>
+<p>
+You can delete your data at any time from <strong>Profile & Settings → Delete Profile & Data</strong>, 
+which permanently removes your local data and iCloud synced records. Since the App uses Anonymous Authentication, 
+there is no remote user account to delete. This action cannot be undone.
+</p>
+
+<h2>8. Children’s Privacy</h2>
+<p>
+The App is not directed to children under 13 (or the minimum age required in
+your jurisdiction). We do not knowingly collect personal information from children.
+</p>
+
+<h2>9. Your Rights</h2>
+<p>
+Depending on your location, you may have rights to access, correct, or delete
+your personal data. You can exercise deletion directly in the App, or contact
+us using the details below.
+</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>
+We may update this Privacy Policy from time to time. The “Last updated” date
+above reflects the latest revision.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+If you have questions about this Privacy Policy, contact us at:
+<a href="mailto:support@foodtracker.app">supportfoodtracker@gmail.com</a>
+</p>
+</body>
+</html>
