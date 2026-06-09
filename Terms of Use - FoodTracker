@@ -25,6 +25,7 @@ h2 { font-size: 1.25rem; margin-top: 2rem; }
   margin: 1.5rem 0;
   border-radius: 0 8px 8px 0;
 }
+nav a { margin-right: 14px; }
 </style>
 </head>
 <body>
@@ -90,7 +91,14 @@ We may modify these Terms at any time. We will notify you of any changes by upda
 <h2>8. Contact</h2>
 <p>
 If you have any questions or concerns regarding these Terms, please contact us at:
-<a href="mailto:support@foodtracker.app">supportfoodtracker@gmail.com</a>
+<a href="mailto:foodtrackersupport@gmail.com">foodtrackersupport@gmail.com</a>
 </p>
+
+<h2>Legal</h2>
+<nav>
+<a href="Privacy Policy - FoodTracker">Privacy Policy</a>
+<a href="Support- FoodTracker">Support</a>
+</nav>
+
 </body>
 </html>
