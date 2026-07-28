@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for the Yoga iOS app.">
+  <title>Yoga | Support</title>
+  <style>
+    :root { color-scheme: dark; --bg: #071411; --card: #10221d; --text: #f2fbf7; --muted: #a9bbb4; --mint: #69e5ba; --line: #26423a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: radial-gradient(circle at top, #15352c 0, var(--bg) 34rem); }
+    main { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 80px; }
+    header { margin-bottom: 36px; }
+    .brand { color: var(--mint); font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 10px 0 8px; font-size: clamp(36px, 7vw, 56px); line-height: 1.05; letter-spacing: -.035em; }
+    h2 { margin: 36px 0 10px; font-size: 22px; }
+    h3 { margin: 0; font-size: 17px; }
+    p { color: var(--muted); }
+    a { color: var(--mint); }
+    .updated { margin: 0; color: var(--muted); }
+    .panel { padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: color-mix(in srgb, var(--card) 92%, transparent); box-shadow: 0 18px 60px rgb(0 0 0 / 20%); }
+    .contact { margin: 24px 0 8px; padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: rgb(105 229 186 / 7%); }
+    details { padding: 18px 0; border-bottom: 1px solid var(--line); }
+    details:last-of-type { border-bottom: 0; }
+    summary { cursor: pointer; color: var(--text); font-weight: 650; }
+    details p { margin-bottom: 0; }
+    footer { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 520px) { main { padding-top: 40px; } .panel { padding: 21px; border-radius: 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">Yoga</div>
+      <h1>Support</h1>
+      <p class="updated">Last updated: 28 July 2026</p>
+    </header>
+
+    <article class="panel">
+      <p>Yoga is an iOS app for guided yoga practice, on-device pose feedback, mindfulness, and progress tracking. This page explains how to get help with its main features.</p>
+
+      <section class="contact">
+        <h3>Contact us</h3>
+        <p>Email <a href="mailto:supportworkouttracker@gmail.com">supportworkouttracker@gmail.com</a>.</p>
+        <p>Please include your device model, iOS version, Yoga app version, and a short description of the problem. If possible, include the steps that caused it and a screenshot that does not contain sensitive information.</p>
+      </section>
+
+      <h2>Frequently asked questions</h2>
+
+      <details open>
+        <summary>Why does Yoga ask for camera access?</summary>
+        <p>Yoga uses the front camera during AI-guided practice to detect body and hand positions and provide pose feedback. Apple's Vision framework processes camera frames on your device. Yoga does not save or upload the camera video.</p>
+        <p>You can change camera permission in iOS Settings. Pose analysis will not work without camera access, but other parts of the App remain available.</p>
+      </details>
+
+      <details>
+        <summary>Why does Yoga ask for Apple Health access?</summary>
+        <p>With your permission, Yoga can read mindful sessions and yoga workouts and save completed mindful sessions, yoga workouts, and related active energy to Apple Health. You control each permission through Apple Health.</p>
+        <p>You can review Yoga's access in the Health app or iOS Settings. Denying Health access does not prevent you from using Yoga's core practice features.</p>
+      </details>
+
+      <details>
+        <summary>Where are my journal and progress stored?</summary>
+        <p>Journal entries, your profile photo or preset avatar, mood, session history, achievements, course progress, and most practice progress are stored locally on your device. Yoga does not upload journal text or profile photos to Firebase.</p>
+        <p>Your display name, practice minutes, streak, XP, and level are sent to Firebase for the community leaderboard. Your display name and leaderboard statistics may be visible to other Yoga users.</p>
+      </details>
+
+      <details>
+        <summary>Do I need to create an account?</summary>
+        <p>No email address or password is required. Yoga uses Firebase Anonymous Authentication in the background to support Firebase features such as the leaderboard.</p>
+      </details>
+
+      <details>
+        <summary>Is Yoga free?</summary>
+        <p>Yes. Yoga does not offer in-app purchases or subscriptions.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete Yoga data?</summary>
+        <p>Open Profile, then choose "Delete my Yoga data." Yoga requests deletion of its Yoga-specific cloud statistics and leaderboard entry, then clears local progress, journal entries, profile data, sessions, course completion, achievements, and pending Yoga reminders.</p>
+        <p>The action does not delete the shared Firebase Authentication record or data belonging to other apps in the same Firebase project. Yoga creates a fresh anonymous session after deletion.</p>
+        <p>If cloud deletion fails, Yoga keeps the current session and local data so you can retry. For help with a data request, email <a href="mailto:supportworkouttracker@gmail.com">supportworkouttracker@gmail.com</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I remove Yoga data from Apple Health?</summary>
+        <p>Open the Health app to review or delete records written by Yoga. You can also change Yoga's Health permissions in the Health app or iOS Settings. Resetting Yoga does not delete information already stored in Apple Health.</p>
+      </details>
+
+      <details>
+        <summary>Pose detection is not working. What should I try?</summary>
+        <p>Check that camera permission is enabled, place the device where your full body is visible, use even lighting, and keep the camera stable. If the problem continues, restart the App and include your device and iOS version in a support email.</p>
+      </details>
+
+      <details>
+        <summary>Notifications are not appearing. What should I try?</summary>
+        <p>Check Yoga's notification permission in iOS Settings and review reminder settings in the App. Focus modes and system notification summaries can delay or hide reminders.</p>
+      </details>
+
+      <details>
+        <summary>How do I report a bug or request a feature?</summary>
+        <p>Email <a href="mailto:supportworkouttracker@gmail.com">supportworkouttracker@gmail.com</a> with a short description. For a bug, include the steps to reproduce it and any error message you saw.</p>
+      </details>
+    </article>
+
+    <footer>Yoga for iOS · <a href="Privacy%20Policy%20-%20Yoga.html">Privacy Policy</a></footer>
+  </main>
+</body>
+</html>
