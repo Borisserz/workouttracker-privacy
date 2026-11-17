@@ -25,10 +25,10 @@ th, td { border: 1px solid rgba(127,127,127,0.3); padding: 8px 10px; text-align:
 </head>
 <body>
 <h1>Privacy Policy — WorkoutTracker</h1>
-<p class="muted">Last updated: 31 May 2026</p>
+<p class="muted">Last updated: 17 November 2026</p>
 
 <p>
-This Privacy Policy explains how WorkoutTracker (“the App”, “we”, “us”),
+This Privacy Policy explains how WorkoutTracker (listed on the App Store as “AI Workout Coach &amp; Gym Tracker”, “the App”, “we”, “us”),
 developed by Boris Serzhanovich, handles your information. The App is a
 fitness and workout tracking application for iOS and watchOS. By using the
 App you agree to the practices described below.
@@ -38,19 +38,19 @@ App you agree to the practices described below.
 <table>
 <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
 <tr>
-<td>Health & Fitness</td>
+<td>Health &amp; Fitness</td>
 <td>Heart rate, HRV, resting heart rate, sleep (via HealthKit); workouts,
 sets, reps, weights, and body measurements you enter</td>
 <td>To provide core app functionality: tracking, statistics, and recovery insights</td>
 </tr>
 <tr>
 <td>Name</td>
-<td>The display name you provide during onboarding</td>
-<td>To personalize the app experience</td>
+<td>The display name you provide during onboarding (and optional profile info if you sign in with Apple or Google)</td>
+<td>To personalize the app experience and link cloud community safety features</td>
 </tr>
 <tr>
 <td>Photos</td>
-<td>Progress/“Before & After” photos and Smart Capture images</td>
+<td>Progress/“Before &amp; After” photos and Smart Capture images</td>
 <td>To let you track visual progress. Photos are stored locally on your device</td>
 </tr>
 <tr>
@@ -58,6 +58,11 @@ sets, reps, weights, and body measurements you enter</td>
 <td>Messages and prompts you send to the AI Coach; titles, descriptions
 and notes in workouts you choose to share</td>
 <td>To generate AI responses and to publish content you explicitly share</td>
+</tr>
+<tr>
+<td>Analytics, Diagnostics &amp; Performance</td>
+<td>Non-linked product interaction events (without body weight, Apple Health data, or set weights/reps), crash logs, and performance traces</td>
+<td>To monitor app stability, diagnose crashes, and improve performance</td>
 </tr>
 </table>
 
@@ -92,18 +97,15 @@ do not share it with third parties. HealthKit data is processed on your device.
 </ul>
 <h2>4. AI Features</h2>
 <p>
-When you use AI Coach or AI generation features, the text you submit is sent
-to our secure backend (Google Cloud Functions) and processed by Google’s
-Vertex AI (Gemini) models to generate a response. Requests are protected by
-Firebase App Check. Please avoid submitting sensitive personal information in
-AI prompts.
+When you use AI Coach or AI generation features (after accepting the in-app AI consent notice), the prompts and non-sensitive training context you submit (body weight and Apple Health data are never sent) are transmitted over HTTPS to our backend (Google Cloud Functions) and routed via OpenRouter to third-party AI language models to generate a response. When you publish a shared workout, its title, description, and exercise notes are also screened by automated AI moderation via OpenRouter. Requests are protected by Firebase App Check and per-account rate limits. Please avoid submitting sensitive personal information in AI prompts.
 </p>
 
 <h2>5. Third-Party Services</h2>
 <ul>
-<li>Google Firebase (Authentication, Firestore, App Check) — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
-<li>Google Cloud / Vertex AI (Gemini) — <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy</a></li>
-<li>Apple HealthKit — data governed by Apple’s on-device frameworks</li>
+<li>Google Firebase (Authentication, Firestore, App Check, Remote Config, Analytics, Crashlytics, Performance Monitoring) — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+<li>OpenRouter (AI model routing &amp; automated workout moderation) — <a href="https://openrouter.ai/privacy">OpenRouter Privacy</a></li>
+<li>Apple HealthKit &amp; iCloud (CloudKit) — governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a></li>
+<li>Sign in with Apple / Google Sign-In — optional authentication if you choose to link an account</li>
 </ul>
 
 <h2>6. Data Sharing</h2>
@@ -143,7 +145,7 @@ above reflects the latest revision.
 <h2>11. Contact</h2>
 <p>
 If you have questions about this Privacy Policy, contact us at:
-<a href="mailto:support@workouttracker.app">supportworkouttracker@gmail.com</a>
+<a href="mailto:supportworkouttracker@gmail.com">supportworkouttracker@gmail.com</a>
 </p>
 </body>
 </html>
